@@ -4,7 +4,7 @@ Two small, easy-to-install GUI tools made for Windows:
 
 * **YouTube Downloader** – Downloads music (MP3) or video (MP4) from a YouTube link. Supports single videos or entire playlists.
 * **Universal Video Converter** – Converts videos on your computer to play smoothly on any device (car screens, old TVs, USB-powered multimedia systems, etc.).
-* **kur.bat** – A helper file that installs everything required (Python, yt-dlp, ffmpeg) with a single click.
+* **setup.bat** – A helper file that installs everything required (Python, yt-dlp, ffmpeg) with a single click.
 
 No command-line knowledge required; they all work with simple double-click windows.
 
@@ -14,7 +14,7 @@ No command-line knowledge required; they all work with simple double-click windo
 
 | File | What does it do? |
 | --- | --- |
-| `kur.bat` | Automatically installs Python, yt-dlp, and ffmpeg |
+| `setup.bat` | Automatically installs Python, yt-dlp, and ffmpeg |
 | `youtube_downloader.pyw` | MP3 / MP4 downloader for YouTube |
 | `Universal_Video_Converter.pyw` | Batch video conversion program |
 
@@ -25,14 +25,14 @@ No command-line knowledge required; they all work with simple double-click windo
 ## ⚙️ Installation
 
 1. Download this repo via **Code → Download ZIP** and extract it to a folder.
-2. Double-click the **`kur.bat`** file.
+2. Double-click the **`setup.bat`** file.
 3. The script sequentially checks / installs the following:
 * **Python** (if missing, Python 3.12 is installed via `winget`)
 * **yt-dlp** (installed or updated via `pip`)
 * **ffmpeg** (if missing, installed via `winget`)
 
 
-4. If Python was installed for the first time, close the window and **run `kur.bat` one more time** (required for Python to be added to PATH).
+4. If Python was installed for the first time, close the window and **run `setup.bat` one more time** (required for Python to be added to PATH).
 5. Once the installation is complete, close any open programs and reopen them. You are good to go!
 
 **Requirements:** Windows 10/11 and an internet connection. The installation uses `winget`; if your computer doesn't have winget, you must install Python manually from [python.org](https://www.python.org/downloads/) (making sure to check the **"Add python.exe to PATH"** box during installation) and install ffmpeg manually.
@@ -111,13 +111,13 @@ Some car multimedia screens, old televisions, or devices that play from USBs don
 ## ❓ Common Issues
 
 **"ffmpeg not found" warning appears.**
-ffmpeg might not be installed, or it might have just been added to the PATH. After running `kur.bat`, close the program and reopen it; if it still appears, restart your computer.
+ffmpeg might not be installed, or it might have just been added to the PATH. After running `setup.bat`, close the program and reopen it; if it still appears, restart your computer.
 
 **The program doesn't open at all.**
-Python might not be installed, or `.pyw` files are not associated with Python. Run `kur.bat`; if you installed Python manually, make sure you checked the PATH option.
+Python might not be installed, or `.pyw` files are not associated with Python. Run `setup.bat`; if you installed Python manually, make sure you checked the PATH option.
 
 **Downloading gives an error (403 / 429).**
-YouTube might have imposed a temporary limit. Wait a bit and try again, or run `kur.bat` to update yt-dlp (Since YouTube changes frequently, keeping yt-dlp up-to-date is important).
+YouTube might have imposed a temporary limit. Wait a bit and try again, or run `setup.bat` to update yt-dlp (Since YouTube changes frequently, keeping yt-dlp up-to-date is important).
 
 ---
 
