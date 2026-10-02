@@ -136,6 +136,6 @@ These tools are for **personal use** only. It is solely the user's responsibilit
 
 ## 👤 Creator
 
-Made by **divJS** – Telegram: [@divJS](https://www.google.com/search?q=https://t.me/divJS)
+Made by **divJS** – Telegram: [@divJS](https://t.me/divJS)
 
 You can use the **Issues** section for bug reports or suggestions.
